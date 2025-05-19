@@ -37,6 +37,7 @@ html{
 }
 body{
     color: var(--text);
+    max-width: 850px;
 }
 
 
@@ -50,6 +51,8 @@ body{
     width: 100%;
     position: fixed;
     z-index: 999;
+    max-width: 850px;
+    overflow-x: hidden;
 }
 .nav_list{
     display: flex;
@@ -106,6 +109,7 @@ body{
 #hero p{
     font-size: 0.9rem;
     margin-bottom: 4em;
+    text-transform: capitalize;
 }
 #hero a{
     display: block;
@@ -147,29 +151,23 @@ body{
     justify-content: space-between;
 }
 .project{
+    max-width: 90%;
     border: 1px solid;
     border-radius: 5px;
     margin: 0 auto 2em;
-    width: 20em;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
-.project small{
-    background-color: var(--accent);
-    font-size: 0.65rem;
-    display: block;
-    width: 28%;
-    margin-top: 0.2em;
-    margin-bottom: 0.2em;
-    border-radius: 5px;
-    color: var(--white);
-    padding: 0.2em 0.5em;
-} 
+
 .project-title{
     text-transform: uppercase;
 }
 .project-description{
     padding: 0.5em;
     text-align: center;
+    text-wrap: balance;
 }
 .project a{
    
@@ -212,4 +210,43 @@ footer p{
 }
 footer p a{
     color: inherit;
+}
+
+@media screen and (min-width: 700px) {
+    
+  #hero{
+    height: 30em;
+    padding-top: 3em;
+  }
+  #hero h1{
+    font-size: 4rem;
+    padding-top: 1em;
+  }
+  #hero p{
+    font-size: 1.3rem;
+    margin-bottom: 3em;
+  }
+  #project-section > h2{
+    font-size: 1.8rem;
+  }
+  .project{
+    max-width: 40%;
+  }
+}
+
+@media  screen and (min-width: 850px) {
+    body{
+        margin: auto;
+        border-left: 1px solid;
+        border-right: 1px solid;
+    }
+    #navbar{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .nav_list {
+        margin-right: 2em;
+        gap: 3em; 
+    }
+    
 }
