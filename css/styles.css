@@ -19,15 +19,33 @@ img{
     --white: white;
     --font: 'Ancizar Serif';
 }
+@keyframes blink{
+    0%{
+        color: var(--main-color)
+    }
+    25%{
+        color: #002D72;
+    }
+    100%{
+        color: var(--accent);
+    }
+}
 
 html{
     font-size: 16px;
     font-family: var(--font), sans-serif;
 }
+body{
+    color: var(--text);
+}
+
+/*navigation*/
 
 #navbar{
     color: var(--text);
     background-color: var(--main-color);
+    width: 100%;
+    position: fixed;
 }
 .nav_list{
     display: flex;
@@ -49,4 +67,49 @@ html{
 .nav_list a:hover{
     color: var(--text);
     background-color: var(--white);
+}
+
+/*hero*/
+
+#hero{
+    background-color: var(--main-color);
+    height: 20em;
+    text-align: center;
+    color: var(--white);
+}
+#hero h1{
+    padding-top: 22%;
+    font-size: 2.5em;
+    text-transform: capitalize;
+}
+#hero .break{
+    display: block;
+    color: var(--accent);
+    margin-bottom: 0.5em;
+    animation: blink 3.5s linear infinite;
+}
+#hero .break::before{
+    content: '<';
+    font-size: 1.8rem;
+}
+#hero .break::after {
+    content: '/>';
+    font-size: 1.8rem;
+}
+#hero p{
+    font-size: 0.9rem
+}
+#hero a{
+    display: block;
+    margin-top: 2em;
+}
+#hero a button{
+    padding: 0.3em;
+    color: var(--text);
+    text-transform: uppercase;
+    font-weight: bold;
+
+    &:hover{
+        cursor: pointer;
+    }
 }
