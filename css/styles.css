@@ -39,6 +39,9 @@ body{
     color: var(--text);
 }
 
+
+
+
 /*navigation*/
 
 #navbar{
@@ -69,6 +72,9 @@ body{
     color: var(--text);
     background-color: var(--white);
 }
+
+
+
 
 /*hero*/
 
@@ -121,7 +127,11 @@ body{
     }
 }
 
+
+
+
 /* Projects section*/
+
 #project-section h2{
     text-align: center;
     font-size: 1.2rem;
@@ -174,4 +184,32 @@ body{
     &:hover{
         background-color: #002244;
     }
+}
+
+/* footer */
+footer{
+    background-color: var(--main-color);
+    color: var(--white);
+    text-align: center;
+    padding: 1em 1em 0.5em;
+    font-size: 1.2rem;
+}
+.social_links{
+    max-width: 50%;
+    margin: 0.5em auto;
+    display: flex;
+    justify-content: space-around;
+}
+.social_links a{
+    color: inherit;
+    margin-bottom: 1.5em;
+}
+.social_links a:hover{
+    scale: 1.2;
+}
+footer p{
+    font-size: 0.8rem;
+}
+footer p a{
+    color: inherit;
 }
