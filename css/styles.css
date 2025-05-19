@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&display=swap');
 
 :root{
-    --main-color: ;
-    --accent: ;
-    --text: ;
+    --main-color: #002D62;
+    --accent: #4169E1;
+    --text: #002244;
     --white: white;
     --font: 'Ancizar Serif', sans-serif;
 }
