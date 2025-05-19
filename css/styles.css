@@ -1,9 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&display=swap');
 
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+
 :root{
     --main-color: #002D62;
     --accent: #4169E1;
     --text: #002244;
     --white: white;
-    --font: 'Ancizar Serif', sans-serif;
+    --font: 'Ancizar Serif';
+}
+
+html{
+    font-size: 16px;
+    font-family: var(--font), sans-serif;
+}
+
+#navbar{
+    color: var(--text);
+    background-color: var(--main-color);
+}
+.nav_list{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 3em;
+    list-style: none;
+}
+.nav_list a{
+    color: var(--white);
+    text-decoration: none;
+    background-color: var(--main-color);
+    padding: 0.5em;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.nav_list a:hover{
+    color: var(--text);
+    background-color: var(--white);
 }
