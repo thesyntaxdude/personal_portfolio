@@ -4,7 +4,7 @@ This is a certification project from [freeCodeCamp].
 
 ### Preview
 
-[./assets/images/preview.png]
+![](./assets/images/preview.png)
 
 ## The Challenge
 
