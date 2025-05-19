@@ -4,7 +4,7 @@ This is a certification project from [freeCodeCamp].
 
 ### Preview
 
-[screenshot]
+[./assets/images/preview.png]
 
 ## The Challenge
 
@@ -34,7 +34,6 @@ This is a certification project from [freeCodeCamp].
 - [X]
 - [github]
 
-[screenshot]: ./assets/images/preview.png
 [freeCodeCamp]: freecodecamp.org/learn
 [github]: https://github.com/thesyntaxdude
 [linkedIn]: https://linkedin.com/in/princeakakpo
