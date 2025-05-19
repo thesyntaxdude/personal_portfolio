@@ -37,7 +37,7 @@ html{
 }
 body{
     color: var(--text);
-    max-width: 850px;
+    max-width: 1000px;
 }
 
 
@@ -51,7 +51,7 @@ body{
     width: 100%;
     position: fixed;
     z-index: 999;
-    max-width: 850px;
+    max-width: 1000px;
     overflow-x: hidden;
 }
 .nav_list{
